@@ -1,0 +1,298 @@
+/* POPPINS FONT FAMILY */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: scroll; /*---mark hidden to hide the overflow--*/
+  overflow-y: scroll;
+  background-color: #f5f5f5;
+}
+/*----logo--*/
+.logo {
+  margin: 0;
+  padding-top: 30px;
+}
+/*-------header---*/
+header {
+  background-color: #566afa;
+  color: #fff;
+  padding: 20px 0 10px 30px;
+  margin: 0;
+}
+nav {
+  float: right;
+  padding: 10px 50px;
+  cursor: pointer;
+}
+nav > a {
+  padding-left: 30px;
+}
+.nav-item-active {
+  background-color: #fff;
+  color: #566afa;
+  text-align: center;
+  padding: 2px;
+  border-radius: 3px;
+  font-size: 15px;
+  margin: 0 15px;
+}
+.header-text {
+  padding: 100px 0 20px 0;
+}
+.header-text > h2 {
+  font-size: 50px;
+  padding: 0;
+}
+.header-text > p {
+  position: relative;
+  bottom: 30px;
+  font-size: 20px;
+}
+.header-image {
+  float: right;
+  position: relative;
+  bottom: 400px;
+}
+/*------body--*/
+.company-items {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  font-weight: bolder;
+  padding-right: 90px;
+  position: relative;
+  left: 60px;
+}
+.api-heading {
+  font-weight: bolder;
+  font-size: 50px;
+  line-height: 50px; 
+  padding: 30px 20px 0px 0;
+  position: relative;
+  top: 90px;
+  left: 30px;
+}
+/*------cards---*/
+.cards {
+  object-fit: contain;
+  height: auto;
+  display: inline-block;
+  margin: auto;
+  padding: 10px;
+  position: relative;
+  bottom: 120px;
+  left: 30px;
+}
+.cards > div {
+  width: 210px;
+  height: 300px;
+  display: inline-block;
+  align-items: center;
+  padding: 7px;
+  margin: 5px;
+}
+.card-active {
+  background-color: #fff !important;
+  box-shadow: darkgray;
+}
+.card-head-active {
+  color: #566afa;
+}
+.cards > div:nth-of-type(3) {
+  position: relative !important;
+  bottom: 30px;
+}
+/*------more arrow to right--*/
+.right {
+  border: solid #fff;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 8px;
+  margin: 5px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  position: relative !important;
+  bottom: 0px;
+  right: 10px;
+}
+.right-arrow {
+  text-align: justify;
+  padding: 10px;
+  border-radius: 30px;
+  position: relative !important;
+  bottom: 40px !important;
+  width: 20px !important;
+  height: 60px !important;
+  background-color: #566afa !important;
+}
+/*---Ltaest blog articles----*/
+.blog-heading {
+  font-weight: bolder;
+  font-size: 20px;
+  padding: 0px 20px 0 0;
+  position: relative;
+  left: 30px;
+  bottom: 120px;
+}
+/*------blog cards---*/
+.blog-cards {
+  position: relative;
+  bottom: 20px;
+  left: 40px;
+  bottom: 120px;
+}
+.blog-card {
+  display: inline-block;
+  background-color: #fff !important;
+  padding: 0;
+  margin: 0 20px;
+  height: 300px;
+  position: relative;
+}
+.blog-image {
+  position: relative;
+  bottom: 35px;
+}
+.blog-card > div {
+  display: inline-block;
+  padding: 0 20px 0 10px;
+  margin: 0 10px;
+  height: 300px;
+}
+.blog-content > h6 {
+  font-size: 15px;
+  color: #566afa;
+  position: relative;
+  top: 10px;
+}
+
+.blog-content > div {
+  display: inline-block;
+  padding: 0 10px;
+}
+.blog-author {
+  position: relative;
+  bottom: 10px;
+}
+/*---FAQ section---*/
+.faq-section {
+  background-color: #dcdbdb;
+  object-fit: contain;
+  height: 324px;
+  position: relative;
+  bottom: 20px;
+}
+.faq-content {
+  float: left;
+  padding: 0 40px;
+  line-height: 30px;
+}
+.faq-content > h2 {
+  font-size: 45px;
+  line-height: 30px;
+}
+.faq-content > h4 {
+  line-height: 20px;
+  font-size: 15px;
+  font-weight: normal;
+}
+.faq-content > button {
+  border: none;
+  background-color: #566afa;
+  font-size: 15px;
+  font-weight: bold;
+  height: 40px;
+  width: 120px;
+  border-radius: 8px;
+  color: #fff;
+  position: relative;
+  left: 80px;
+}
+.faq-image {
+  float: right;
+}
+/*-----download---*/
+.download-section {
+  padding: 50px 60px;
+}
+.download-content{
+  float: left;
+  font-size: larger;
+  color: #000;
+  font-weight: bolder;
+  position: relative;
+  left: 50px;
+}
+span {
+  font-weight: normal;
+}  
+.download-email {
+  float: right;
+  position: relative;
+  bottom: 10px;
+  border-radius: 20px;
+}
+input[placeholder="Enter your email address"] {
+  border-radius: 40px;
+  border: none;
+  background-color: #dcdbdb;
+  height: 50px;
+  width: 400px;
+  text-align: center;
+  position: relative;
+  top: 40px;
+}
+button {
+  border-radius: 30px;
+  border: none;
+  background-color: #566afa;
+  color: #fff;
+  height: 40px;
+  width: 100px;
+  position: relative;
+  right: 90px;
+  top: 40px;
+}
+/*--------footer section--*/
+.footer-left {
+  float: left;
+  position: relative;
+  right: 300px;
+  top: 100px;
+}
+.footer-right {
+  float: right;
+  position: relative;
+  top: 50px;
+  right: 20px;
+}
+.list > .list-items {
+  display: inline-block;
+  padding: 10px 20px;
+  position: relative;
+  right: 50px;
+}
+.footer-right > img {
+  display: inline-block;
+  padding: 0 20px;
+}
+.logos-list > li  {
+  display: inline-block;
+  padding: 0 15px;
+  position: relative;
+  top: 70px;
+  right: 18px;
+}
+.footer-section {
+  background-color: #566afa;
+  padding: 10px 10px 50px 10px;
+  height: 240px;
+  position: relative;
+  top: 200px;
+  color: #fff;
+}
