@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@700&display=swap');
+
+body {
+    padding: 50px 70px;
+    margin: 0;
+    width: 1240px;
+    height: auto;
+    overflow-x: hidden;
+}
+body >  div {
+    background-color: #fff;
+    margin-top: 100px;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: space-evenly;
+
+    font-size: 18px;
+}
+h1 {
+    font-size: 50px;
+}
+/*--part1--*/
+header {
+    padding-top: 20px;
+    display: flex;
+}
+.navbar {
+    padding: 20px 60px 0 180px;    
+    font-size: 15px;
+}
+.navbar > a {
+    cursor: pointer;
+    color: #000;
+    padding-left: 30px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.active-nav {
+    font-weight: bold;
+}
+.nav-button {
+    border: 3px solid #53a3ff;
+    color: #53a3ff;
+    font-weight: bold;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 200px;
+    padding: 7px 20px;
+    cursor: progress;
+}
+/*--part2--*/
+.sec-one, .sec-two, .sec-three {
+    object-fit: contain;
+    height: 500px;
+}
+.left1 {
+    float: left;
+    max-width: 50%;
+    font-size: 15px;
+}
+
+.s1button {
+    background-image: linear-gradient(#82c7ff, #379eff, #005e94);
+    box-shadow: 0px 5px 6px #b9dceb;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    padding: 10px 30px;
+    margin-top: 50px;
+    cursor: progress;
+}
+.right1 {
+    float: right;
+    max-width: 50%;
+    position: relative;
+    left:50px;
+}
+/*--part3--*/
+
+.left2 {
+    float: left !important;
+    max-width: 50%;
+    position: relative;
+    right: 730px;
+    bottom: 50px;
+}
+.right2 {
+    float: right !important;
+    max-width: 50%;
+    position: relative;
+    bottom: 280px;
+    font-size: 15px;    
+}
+
+.s2button {
+    background-image: linear-gradient(#82c7ff, #379eff, #005e94);
+    box-shadow: 0px 5px 6px #b9dceb;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    padding: 10px 30px;
+    margin-top: 50px;
+    cursor: progress;
+}
+/*--part4--*/
+.left3 {
+    float: left !important;
+    max-width: 50%;
+    position: relative;
+    right: 600px;
+    font-size: 15px;
+}
+.s3button {
+    background-image: linear-gradient(#82c7ff, #379eff, #005e94);
+    box-shadow: 0px 5px 6px #b9dceb;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    padding: 10px 30px;
+    margin-top: 50px;
+    cursor: progress;
+}
+.right3 {
+    float: right;
+    max-width: 50%;
+    position: relative;
+    bottom: 400px;
+    right: 30px;
+}
+/*--part5--*/
+.sec-four {
+    display: flex;
+    width: 1240px;
+    padding: none;
+    margin: 0;
+    position: relative;
+    bottom: 250px;
+}
+.left4 {
+    width: 50%;
+}
+.right4 {
+    width: 50%;
+    padding-left: 20px;
+    padding-top: 40px;
+}
+.blocks {
+    width: 1240px;
+    padding-right: 10px;
+    position: relative;
+    bottom: 250px;
+}
+.row1, .row2 {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+}
+.card {
+    padding:0;
+    margin: 30px;
+    width: 350px;
+}
+/*----price cards (part7)---*/
+.price-section {
+    background-image: linear-gradient(#1797ff, #51abff, #005e94);
+    box-shadow: 0px 5px 6px #b9dceb;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+    right: 100px;
+    align-items: center;
+    width: 1440px;
+    margin: 0 !important;
+    padding: 90px 0;
+}
+.price-cards li {
+    list-style-image: url(./assets/checked-18\ \(2\).png);
+}
+.price-section > h1 {
+    color: #fff;
+    padding:30px 0 60px 0; 
+}
+.price-section > .price-cards {
+    display: inline-flex;
+    flex-direction: row;
+}
+.price1, .price2, .price3 {
+    width: 340px;
+    padding: 0;
+    background-color: #ffffff;
+    box-shadow: #000000b0;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+.pr-head {
+    padding: 30px 20px;
+    font-size: 15px;
+}
+.pr2-head {
+    background-color: #3a3737;
+    color: #fff;
+    margin: 0;
+    padding: 10px 20px ;
+    border-radius: 10px;
+    width: 300px;
+    font-size: 15px;
+    margin-bottom: 35px;
+}
+h3 {
+    font-size: 30px;
+}
+.pr-body {
+    padding: 20px 10px;
+    line-height: 30px;
+}
+.pr-bottom {
+    text-align: center;
+    padding: 20px 10px;
+}
+.pr1-button, .pr3-button {
+    border: 2px solid #53a3ff;
+    color: #53a3ff;
+    font-weight: bold;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 200px;
+    padding: 10px 20px;
+    cursor: progress;
+}
+.pr2-button {
+    background-image: linear-gradient(#82c7ff, #379eff, #005e94);
+    box-shadow: 0px 5px 6px #b9dceb;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    padding: 10px 30px;
+    cursor: progress;
+}
+
+/*---review - section (part8)--*/
+.reviews {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.comments {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 60px;
+}
+.comment {
+    border: 1px solid #cdcdcd;
+    border-radius: 30px;
+    background-color: #fff;
+    text-align: left;
+    margin: 30px;
+    width: 40%;
+    padding: 20px;
+}
+.co-info {
+    display: flex;
+    padding: 0 20px;
+}
+.co {
+    padding-left: 30px;
+}
+.co:hover {
+    color: #ff0000;
+}
+/*---note: this property below fixed
+ the problem of image stretching
+ caused by the flex box used
+ with the text on the side--*/
+.customer-image {
+    align-self: center;
+}
+/*----register panel (part9)-----*/
+.reg-panel {
+    background-image: linear-gradient( 150deg,#65baff, #0084ff, #004974);
+    box-shadow: 0px 5px 6px #b9dceb;
+    position: relative;
+    right: 100px;
+    color: #fff;
+    padding: 20px;
+    height: 400px;
+    width: 1440px;
+}
+.left5 {
+    float: left;
+    width: 60%;
+    padding: 40px 40px 40px 90px;
+}
+.right5 {
+    float: right;
+    width: 20%;
+    padding: 40px 40px 40px 90px;
+}
+.registration {
+    border: 1px solid #fff;
+    color: #fff;
+    font-weight: bold;
+    background-color: transparent;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    padding: 7px 20px;
+    position: relative;
+    top: 120px;
+    right: 100px;
+    cursor: progress;
+}
+/*--footer ~ part10--*/
+footer {
+    padding: 50px 0;
+    margin-top: 150px;
+    display: flex;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+footer h4 {
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+footer a:hover {
+    color: #ff0000;
+}
+.blogo {
+    padding: 10px 0;
+    width: 25%;
+}
+.bmenu, .blinks, .boverview {
+  padding: 0 30px;
+  text-align: center;
+}
+.bmenu > a {
+    display: block;
+    text-decoration: none;
+    padding-top: 40px;
+    color: #000;
+}
+.blinks > a {
+    display: block;
+    text-decoration: none;
+    padding-top: 40px;
+    color: #000;
+}
+.boverview > a {
+    display: block;
+    text-decoration: none;
+    padding-top: 40px;
+    color: #000;
+}
+.bsocialmedia {
+    padding-left: 80px;
+    text-align: center;
+}
+.bsocialmedia > a {
+    display: inline;
+    padding-left: 10px;
+    cursor: progress;
+}
