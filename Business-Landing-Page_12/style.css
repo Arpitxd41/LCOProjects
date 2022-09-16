@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@700&display=swap');
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    background-color: #d1d1d1;
+}
+.head-section, .section5 {
+    padding: 50px 30px 40px 80px;
+    background-color: #485163;
+    color: #fff;
+}
+.nav-section {
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+}
+.logo {
+    position: relative;
+    right: 60px;
+    padding: 20px;
+}
+.navbar {
+    padding: 10px 0px 0px 250px;
+    
+}
+.navbar > a {
+    padding-right: 30px;
+    text-decoration: none;
+    color: #fff;
+}
+.first {
+    border: 1px solid #fff;
+    background: transparent;
+    height: 50px;
+    width: 200px;
+    color: #fff;
+    padding: 10px 30px;
+    margin-left: 50px;
+    border-radius: 5px;
+}
+.intro-section {
+    display: flex;
+    flex-direction: row;
+    padding: 50px 20px;
+}
+.intro-section > div {
+    padding: 30px 30px;
+    font-size: 15px;
+}
+.left1 > img {
+    margin-top: 30px; /*change image specifications*/
+    object-fit: cover;
+    height: 350px;
+    width: 300px;
+}
+.right1 > h1 {
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+.mail {
+    padding-top: 20px;
+}
+.mail > input {
+    font-size: 15px;
+    width: 430px;
+    height: 50px;
+    border: none;
+    border-radius: 2px;
+}
+.second {
+    height: 40px;
+    border: none;
+    background-color: #519651;
+    color: #fff;
+    position: relative;
+    right: 105px;
+}
+
+/*---section 2----*/
+.section2 {
+    text-align: center;
+}
+h2 {
+
+    font-size: 40px;
+}
+.stats {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 50px;
+}
+.stats > div {
+    padding: 30px 70px;
+    font-size: 20px;
+}
+.section3 {
+    text-align: center !important;
+    padding: 70px;
+}
+.sec3 {
+
+    margin-top: 80px;
+    background-color: #fff;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.sec3child {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    text-align: left;
+    font-size: 17px;
+}
+.sec3 h3 {
+    font-size: 35px;
+}
+.left3, .left4, .left5 {
+    float: left;
+    width: 50%;
+    padding: 20px;
+}
+.right3, .right4, .right5 {
+    float: right;
+    width: 50%;
+    padding: 20px;
+}
+.third {
+    width: 150px;
+    height: 40px;
+    margin-top: 20px;
+    border: none;
+    background-color: #519651;
+    color: #fff;
+}
+.section4 {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+.sec4 > h2{
+    float: left;
+    width: 30%;
+    padding: 30px 70px;
+}
+.sec4 > p {
+    float: right;
+    width: 40%;
+    font-size: 17px;
+    padding: 70px 170px 0 0;
+}
+.teamcard {
+    display: flex;
+    flex-direction: row;
+    padding-left: 30px;
+}
+.card {
+    width: 400px;
+    padding: 20px 40px;
+}
+.fifth {
+    width: 150px;
+    height: 40px;
+    margin-top: 20px;
+    border: none;
+    background-color: #519651;
+    color: #fff;
+    position: relative;
+    left: 500px;
+}
+.section5 {
+    align-items: left;
+    background-color: #485163;
+    margin-top: 50px;
+    padding: 30px 30px 40px 90px;
+}
+.bottom-logo {
+    padding: 20px 40px;
+} 
+.last {
+   display: flex;
+   flex-direction: row;
+}
+.social-media {
+    position: relative;
+    left: 550px;
+    top: 30px;
+    padding: 0 30px;
+    cursor: none;
+}
+.social-media > a {
+    padding-left: 5px;
+}
+.bar {
+    padding: 40px 30px;
+    width: 1040px;
+}
+.bottom {
+    display: flex;
+    flex-direction: row;
+}
+.product {
+    padding: 0 30px;
+    width: 200px;
+}
+.bottom > div {
+    padding: 0 35px; 
+    display: flex;
+    flex-direction: column;
+}
+.bottom a {
+    padding: 10px 0;
+    font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+.section5 a:hover {
+    color: #ff0000;    
+}
