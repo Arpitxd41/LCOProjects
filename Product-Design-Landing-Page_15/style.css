@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@700&display=swap');
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    background-color: #000;
+    color: #fff;
+    padding: 30px 30px 30px 50px;
+    cursor: auto;
+    overflow-x: hidden;
+}
+p {
+    font-size: 15px;
+}
+h5 {
+    color: #FF3343;
+}
+/*----navigaton area-----*/
+.navigation-field {
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    color: #FF3343;
+}
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 450px;
+}
+.nav-item > a {
+    text-decoration: none !important;
+    font-size: 15px;
+    color: #fff;
+    padding: 0 30px;
+}
+.arrow-down {
+    border: solid #FFF;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin-left: 5px;
+    margin-bottom: 4px;
+}
+#drop2, #drop1 {
+    background-color: transparent;
+    color: #FFF;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown-menu, .dropdown-menu2 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f900;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-menu a {
+    color: #FFF;
+    background-color: transparent;
+    padding: 6px 8px;
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+}
+.dropdown-menu2 a {
+    color: #FFF;
+    background-color: transparent;
+    padding: 6px 8px;
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+}
+  /*----hover action--*/
+.dropdown-menu a:hover {
+    background-color: #161616;
+    color: #FF3343;
+    font-weight: bold;
+}
+.dropdown-menu2 a:hover {
+    background-color: #161616;
+    color: #FF3343;
+    font-weight: bold;
+}
+#drop1:hover > .dropdown-menu {
+    display: block;
+}
+#drop2:hover > .dropdown-menu2 {
+    display: block;
+}
+/*----first main section----*/
+.main-head {
+    display: flex;
+    flex-direction: row;
+}
+.dp {
+    float: left;
+    width: 40%;
+}
+.intro {
+    float: right;
+    width: 60%;
+    position: relative;
+    top: 200px;
+}
+.about {
+    background-color: #FF3343;
+    color: #fff;
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+}
+.about:hover {
+    background-color: #fff;
+    color: #FF3343;
+    font-weight: bold;
+}
+/*-----the cards & section-2-----*/
+.section-2 {
+    align-content: center;
+}
+.left-block {
+    content: '';
+    float: left;
+    padding: 0;
+    position: absolute;
+    left: 0px;
+    background-color: #131313e7;
+    width: 50%;
+    height: 1000px;
+    z-index: 0;
+}
+.center-blocks-1 {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 100px;
+    top: 100px; 
+}
+.block1, .block2, .block3 {
+    width: 250px;
+    padding: 40px;
+    margin: 10px;
+    top: 100px;
+    z-index: 1;
+    background-color: #161616;
+}
+.block1:hover > h5 {
+    color: #fff !important;
+}
+.block2:hover > h5 {
+    color: #fff !important;
+}
+.block3:hover > h5 {
+    color: #fff !important;
+} 
+.block1:hover {
+    background-color: #ce0011;
+}
+.block2:hover {
+    background-color: #ce0011;
+}
+.block3:hover {
+    background-color: #ce0011;
+}
+/*----image transforms from here----*/
+.image1 {
+    content: url(./assets/group1r1.png);
+}
+.image2 {
+    content: url(./assets/group2r2.png);
+}
+.image3 {
+    content: url(./assets/group3r3.png);
+}
+/*-----targetting child with parent hover-----*/
+.block1:hover > .image1 {
+    content: url(./assets/group1w1.png);
+}
+.block2:hover > .image2 {
+    content: url(./assets/group2w2.png);
+}
+.block3:hover > .image3 {
+    content: url(./assets/group3w3.png);
+}
+
+
+/*----grid cards---*/
+.center-blocks-2 {
+    display: grid;
+    width: 83%;
+    grid-template-columns: auto auto auto; /*--no. fo columns--*/
+    gap: 20px;
+    position:relative;
+    left: 110px;
+    z-index: 1;
+    top: 230px;
+}
+.center-blocks-2 > div {
+    background-color: #161616;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px 20px;
+    line-height: 10px;
+    font-weight: normal;
+}
+.center-blocks-2 h3 {
+    color: #FF3343;
+    font-size: 30px;
+}
+.blocks1 {
+    grid-row: 1 / span 2;
+    line-height: 0px !important;
+}
+.blocks1 h3 {
+    font-size: 80px !important;
+    padding-top: 0px !important;
+    font-weight: 900 !important;
+}
+
+
+.section-3 {
+    margin-top: 50px;
+    position: relative;
+    top: 350px;
+    left: 100px;
+    width: 83%;
+}
+.section-31 {
+    display: inline-flex;
+    flex-direction: row;
+}
+.sec3 > h3 {
+    font-size: 30px;
+}
+.view {
+    position: relative;
+    left: 350PX;
+    top: 50px;
+    border: none;
+    padding: 10px 30px;
+    background-color: #FF3343;
+    color: #fff;
+    cursor: pointer;
+}
+.view:hover {
+    background-color: #fff;
+    color: #FF3343;
+    font-weight: bold;
+}
+.cards {
+    margin-top: 50px;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    line-height: 10px;
+}
+.card > img {
+    background-color: #161616;
+    padding: 50px 10px;
+    object-fit: cover;
+    overflow: hidden;
+}
+.card:nth-last-child(2) > img {
+    background-color: #161616;
+    padding: 50px 45px;
+    max-height: 280px;
+}
+
+
+
+.contact-section {
+    margin-top: 70px;
+    background-color: #161616;
+    display: flex;
+    flex-direction: row;
+    width: 1060px;
+}
+.contact-head {
+    padding: 30px;
+    width: 60%;
+    font-size: 35px;
+}
+.contact {
+    position: relative;
+    top: 150px;
+    left: 160px;
+    padding: 10px 30px;
+    background-color: #FF3343;
+    color: #fff;
+    border: none;
+    font-weight: normal;
+    cursor: pointer;
+}
+.contact:hover {
+    background-color: #fff;
+    color: #FF3343;
+    font-weight: bold;    
+}
+.sec3-bottom {
+    margin-top: 60px;
+    text-align: center;
+}
+.sec3-bottom > a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0 30px;
+}
+.sec3-bottom > a:hover {
+    text-decoration: underline;
+}
+/*----end section--*/
+.section-4 {
+    margin: 50px 0 !important;
+    width: 1440px;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    background-color: #050505;
+    position: relative;
+    top: 400px;
+    right: 100px;
+}
+.logo-bottom {
+    float: left;
+    padding-left: 90px;
+}
+.social-media {
+    float: left;
+    position: relative;
+    left: 400px;
+}
+.social-media > a {
+    padding: 0 20px;
+}
