@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@700&display=swap');
+body{
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+}
+header {
+    background-color: #6924e9;
+    color: #fff;
+    margin: 0;
+    padding: 30px 20px 40px 90px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 600px;
+}
+.nav-section {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Montserrat', sans-serif;
+}
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    padding-left: 400px;
+    font-size: 16px;
+}
+.nav-bar > a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 40px 10px 0px;
+}
+.free-trial {
+    background-color: #0099ff;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 25px;
+}  
+.intro {
+    float: left;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 90px;
+    width: 40%;
+}
+.first {
+    float: right;
+    width: 50%;
+}
+/*second section----*/
+.section-2 {
+    margin: 40px 50px;
+}
+.saas-image {
+    float: left;
+    width: 40%;
+}
+.sec-21 {
+    float: right;
+    width: 40%;
+    padding: 40px;
+    word-wrap: break-word;
+}
+ul {
+    list-style: url(./assets/forward\ arrow.png);
+  }
+
+.sec-22 {
+    float: left;
+    text-align: center;
+}
+.cards {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin: 90px 0;
+}
+.card {
+    border-right: 4px solid #b4afaf ;
+    border-bottom: 4px solid #b4afaf;
+    width: 20%;
+    line-height: 20px;
+    padding: 20px 0 0 0;
+    border-radius: 30px;
+    margin: 30px;
+    background-color: #fff;
+}
+.card-base-active {
+    background-color: #6924e9;
+    color: #fff;
+    margin: 0;
+    padding: 5px 2px;
+    border-radius: 25px;
+}
+h3 {
+    font-size: 30px;
+}
+h4 {
+    font-size: 20px;
+}
+.card-base > p {
+
+    font-size: 15px;
+}
