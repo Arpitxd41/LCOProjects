@@ -326,7 +326,7 @@ h5 {
     padding: 50px;
     display: flex;
     flex-direction: row;
-    background-color: #050505;
+    background-color: #161616;
     position: relative;
     top: 400px;
     right: 100px;
@@ -338,7 +338,7 @@ h5 {
 .social-media {
     float: left;
     position: relative;
-    left: 400px;
+    left: 320px;
 }
 .social-media > a {
     padding: 0 20px;
