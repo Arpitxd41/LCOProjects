@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;600&display=swap");
+
+body {
+  font-family: "Fredoka", sans-serif;
+  padding: 20px 50px;
+  height: inherit;
+  background-color: #fff;
+  height: 920px;
+}
+
+/*---navigation-bar----*/
+nav {
+  display: flex;
+  flex-direction: row;
+  font-size: 25px;
+}
+.nav-items {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  left: 200px;
+  padding: 0 50px;
+}
+.nav-item {
+  padding: 0 30px; 
+}
+.nav-item:hover {
+  color: #F45B33;
+}
+img[alt="actions"] {
+  position: relative;
+  left: 250px;
+}
+/*----intro-section----*/
+.intro-section {
+  margin-top: 50px;
+}
+.left-section {
+  float: left;
+  width: 60%;
+  line-height: 30px;
+}
+.left-section > h3 {
+  font-size: 40px;
+  font-weight: normal;
+}
+img[alt="circles"]{
+  position: relative;
+  left:20px;
+  top: 10px;
+}
+h1 {
+  font-size: 70px;
+  font-weight: bolder;
+}
+.sub-headline {
+  display: flex;
+  flex-direction: row;
+  font-size: 25px;
+  font-weight: normal;
+  margin-left: 90px;
+}
+img[alt="plus"] {
+  background-color: #F45B33;
+  padding: 5px;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+.text {
+  font-weight: normal;
+  font-size: 17px;
+  color: #ada9a9;
+  line-height: 20px;
+}
+.action-btns {
+  position: relative;
+  left: 70px;
+  top: 150px;
+  margin-bottom: 80px;
+}
+.action-btn {
+  background-color: #F45B33;
+  border: none;
+  border-radius: 40px;
+  padding: 15px 40px;
+  font-size: 18px;
+  margin-left: 20px;
+  color: #FFF;
+  font-weight: normal;
+}
+/*----right-section--*/
+.right-section {
+  float: right;
+  width: 40%;
+}
+.discount {
+  position: absolute;
+  z-index: 1;
+  top: 450px;
+  right: 390px;
+}
+.discount-content {
+  line-height: 10px;
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  top: 465px;
+  color: #FFF;
+}
+img[alt="headphone"] {
+  position: absolute;
+  top: 150px;
+}
+.dots {
+  display: inline-flex;
+  position: absolute;
+  z-index: 3;
+  top: 750px;
+  right: 180px;
+}
+.dots > div {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  margin: 10px;
+}
+.yellow-dot {
+  background: yellow;
+}
+.tomato-dot {
+  background: red;
+}
+.black-dot {
+  background: black;
+}
+.right-section > button {
+  position: absolute;
+  z-index: 2;
+  top: 850px;
+  right: 160px;
+}
+button:hover {
+  background-color: #FFF;
+  color: #F45B33;
+  font-weight: bold;
+  border: 2px solid #F45B33;
+}
