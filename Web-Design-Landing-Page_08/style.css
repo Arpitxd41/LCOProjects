@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Ubuntu&display=swap");
+body {
+  padding: 20px 20px 30px 50px;
+  font-family: "Roboto", sans-serif;
+  color: #300057;
+  width: 1440px;
+  overflow-x: hidden;
+}
+/*--navigation bar*/
+nav {
+  display: flex;
+  max-height: 50px;
+}
+.nav-items {
+  position: absolute;
+  display: inline-flex;
+  left: 400px;
+}
+.nav-item {
+  padding-left: 40px;
+}
+.signin {
+  position: absolute;
+  right: 100px;
+  top: 52px;
+  background: linear-gradient(90deg, #986bf3, #ef88dc);
+  border: none;
+  border-radius: 20px;
+  color: #FFF;
+  padding: 10px 45px;
+}
+/*--intro-section--*/
+.left-section {
+  float: left;
+  margin-top: 100px;
+  width: 50%;
+}
+.left-section > h1 {
+  font-size: 70px;
+}
+.left-section > h4 {
+  font-weight: normal;
+  line-height: 20px;
+  width: 50%;
+  position: relative;
+  left: 50px;
+}
+.learn-more-btn {
+  position: relative;
+  left: 100px;
+  margin-top: 20px;
+  background: linear-gradient(90deg, #986bf3, #ef88dc);
+  border: none;
+  border-radius: 30px;
+  color: #FFF;
+  padding: 10px 35px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.imgs-div {
+  float: right;
+  width: 50%;
+}
+.vector-dot, .vector-img {
+  position: absolute;
+  z-index: 0;
+  left: 400px;
+  top: 500px
+}
+.intro-img {
+  position: absolute;
+  right:50px;
+  z-index: 0;
+}
+.bgi {
+  position: absolute;
+  z-index: -1;
+  top: -150px;
+  right: 0px;
+}
