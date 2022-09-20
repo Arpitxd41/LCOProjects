@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&family=Carme&family=Fredoka:wght@300&family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@700&display=swap");
+body {
+  width: 1280px;
+  height: 900px;
+  font-size: 1.2rem;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+}
+.navbar-container {
+  background-color: #fff;
+  position: relative;
+  display: inline-flex;
+  margin: 30px;
+  padding: 30px;
+  width: 1280px;
+  height: 60px;
+  top: 40px;
+  font-style: unset;
+  font-weight: bold;
+}
+li:first-of-type {
+  text-decoration: underline;
+}
+ul > li {
+  position: relative;
+  display: inline-flex;
+  bottom: 25px;
+  left: 250px;
+  padding: 30px;
+  font-size: 1.6rem;
+}
+.button-group {
+  position: relative;
+  display: inline-flex;
+  left: 350px;
+  bottom: 25px;
+}
+.nav-button {
+  position: absolute;
+  display: inline-flex;
+  left: 40px;
+  top: 0;
+  border: black;
+  text-align: center;
+}
+
+.square {
+  position: relative;
+  top: 400px;
+  left: 200px;
+}
+.image {
+  position: absolute;
+  top: 320px;
+  left: 55px;
+}
+
+.star {
+  position: relative;
+  left: 1000px;
+  bottom: 260px;
+}
+.globe {
+  position: relative;
+  bottom: 300px;
+  left: 380px;
+}
+.hero-container-right {
+  position: relative;
+  left: 600px;
+  bottom: 100px;
+  max-width: 800px;
+  background-color: #fff;
+  text-align: center;
+  height: 500px;
+  font-family: "Ubuntu Mono", monospace;
+}
+.hero-heading {
+  position: relative;
+  bottom: 100px;
+  left: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+}
+.hero-description {
+  position: relative;
+  bottom: 50px;
+  left: 50px;
+  font-size: 1.5rem;
+}
+div > button {
+  position: relative;
+  top: 10px;
+}
+.contact-heading,
+.icons {
+  position: relative;
+  top: 60px;
+}
+
+/* button styling */
+.nav-button {
+  background-color: white;
+  color: black;
+  border: 3px solid #000;
+  border-radius: 11px;
+  width: 160px;
+  height: 35px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-stretch: ultra-expanded;
+}
+.button-email {
+  background-color: white;
+  color: black;
+  border: 3px solid #000;
+  border-radius: 11px;
+  width: 200px;
+  height: 35px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-stretch: ultra-expanded;
+}
+.button-join {
+  background-color: black;
+  color: white;
+  border: 2px solid #000;
+  border-radius: 11px;
+  width: 160px;
+  height: 35px;
+  text-align: center;
+  font-size: 1.2rem;
+}

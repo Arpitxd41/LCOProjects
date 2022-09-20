@@ -84,12 +84,16 @@ ul {
     margin: 30px;
     background-color: #fff;
 }
-.card-base-active {
+.card:hover .card-base {
     background-color: #6924e9;
     color: #fff;
     margin: 0;
     padding: 5px 2px;
     border-radius: 25px;
+}
+.nav-bar>a:hover {
+    font-weight: bold;
+    color: #fff;
 }
 h3 {
     font-size: 30px;

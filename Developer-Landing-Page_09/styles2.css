@@ -7,6 +7,7 @@
 }
 body {
   background-color: #f4f5f4;
+  overflow-x: hidden;
 }
 /*----header section--*/
 header {
@@ -38,10 +39,9 @@ nav {
   padding: 0 20px;
   cursor: pointer;
 }
-.nav-item-active {
+.nav-item:hover {
   color: #566afa;
   background-color: #fff;
-  padding: 3px 5px;
   border-radius: 5px;
   font-weight: bold;
   cursor: progress;
@@ -72,14 +72,14 @@ nav {
 }
 .card {
   width: 20%;
-  height: 250px;
+  height: 350px;
   margin: 20px;
   background-color: #fff;
   padding: 10px;
   border-radius: 10px;
   cursor: pointer;
 }
-.card-active {
+.card:hover {
   width: 20%;
   box-shadow: 0px 5px 6px #bbbbbb;
   background-color: #fff;
@@ -91,7 +91,6 @@ nav {
   margin-left: 20px;
   margin-top: 30px;
 }
-.card-head-active,
 .card-head {
   margin-left: 20px;
 }
@@ -110,9 +109,13 @@ nav {
   margin: 20px 40px;
   background-color: #fff;
   height: 287px;
+  border-top-left-radius: 50px;
+}
+.blog-card:hover {
   box-shadow: 0px 5px 6px #bbbbbb;
   border-top-left-radius: 50px;
   border-bottom-left-radius: 20px;
+
 }
 h6 {
   color: #566afa;
@@ -122,14 +125,22 @@ h3 {
   position: relative;
   bottom: 15px;
   cursor: pointer;
+  line-height: 22px;
+  font-size: 20px;
 }
-small {
+.blog-content > p {
   position: relative;
   bottom: 20px;
+  font-size: 15px;
+  line-height: 15px !important;
 }
 .blog-author {
   position: relative;
-  left: 20px;
+  left: 10px;
+}
+.blog-card-bottom-image {
+  position: relative;
+  bottom: 15px;
 }
 .blog-content {
   padding: 0 60px 0 30px;
@@ -138,17 +149,19 @@ small {
 }
 .blog-bottom {
   display: flex;
-  padding: 10px 20px 0 0;
+  padding:0px;
+  position: absolute;
 }
 /*----FAQ section---*/
 .faq-section {
   background-color: #e9edfe;
   height: 323px;
-  margin: 40px 0;
+  margin: 80px 0;
   padding-left: 50px;
 }
 .faq-content {
   float: left;
+  width: 55%;
 }
 .faq-content > h2 {
   font-size: 40px;
@@ -164,11 +177,14 @@ small {
   font-size: 16px;
   cursor: pointer;
 }
-h4:first-of-type {
+.faq-section p{
   font-weight: normal;
+  font-size: 17px;
 }
 .faq-image {
   float: right;
+  width: 40%;
+  padding-left: 0pX;
 }
 /*----Download Section---*/
 .download-section {
