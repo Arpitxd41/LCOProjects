@@ -2,56 +2,66 @@
 
 body {
   font-family: "Fredoka", sans-serif;
-  padding: 20px 50px;
-  height: inherit;
   background-color: #fff;
-  height: 920px;
+  max-width: 1440px;
 }
-
+* {
+  padding: 0%;
+  margin: 0%;
+  list-style: none;
+  text-decoration: none;
+}
 /*---navigation-bar----*/
 nav {
   display: flex;
   flex-direction: row;
   font-size: 25px;
+  justify-content: space-evenly;
+  padding: 20px 50px;
 }
 .nav-items {
   display: flex;
   flex-direction: row;
-  position: relative;
-  left: 200px;
-  padding: 0 50px;
+  background-color: #fff;
+  margin: 0px 90px;
 }
 .nav-item {
-  padding: 0 30px; 
+  padding: 10px 30px;
+  margin-top: 10px;
 }
 .nav-item:hover {
   color: #F45B33;
 }
 img[alt="actions"] {
-  position: relative;
-  left: 250px;
+  margin-left: 50px;
 }
 /*----intro-section----*/
 .intro-section {
-  margin-top: 50px;
+  justify-content: space-between;
+  justify-items: center;
 }
 .left-section {
   float: left;
-  width: 60%;
-  line-height: 30px;
+  width: 50%;
+  padding: 50px 20px;
+  margin: 5px;
 }
 .left-section > h3 {
-  font-size: 40px;
+  font-size: 34px;
   font-weight: normal;
 }
 img[alt="circles"]{
   position: relative;
   left:20px;
   top: 10px;
+  padding: 5px;
+  height: 40px;
 }
 h1 {
-  font-size: 70px;
+  font-size: 60px;
   font-weight: bolder;
+  line-height: 70px;
+  padding: 15px;
 }
 .sub-headline {
   display: flex;
@@ -59,6 +69,7 @@ h1 {
   font-size: 25px;
   font-weight: normal;
   margin-left: 90px;
+  padding: 10px;
 }
 img[alt="plus"] {
   background-color: #F45B33;
@@ -71,58 +82,65 @@ img[alt="plus"] {
   font-size: 17px;
   color: #ada9a9;
   line-height: 20px;
+  margin: 50px 20px;
 }
 .action-btns {
-  position: relative;
-  left: 70px;
-  top: 150px;
-  margin-bottom: 80px;
+  margin: 90px 10px;
+  width: 80%;
+  height: 50px;
+  padding: 20px;
 }
-.action-btn {
+.action-btn-1 {
   background-color: #F45B33;
   border: none;
-  border-radius: 40px;
+  border-radius: 90px;
   padding: 15px 40px;
   font-size: 18px;
-  margin-left: 20px;
   color: #FFF;
   font-weight: normal;
+  margin: 10px;
+  width: 210px;
+  height: 60px;
 }
 /*----right-section--*/
 .right-section {
   float: right;
-  width: 40%;
+  width: 42%;
+  padding: 0px 20px;
+  margin: 0px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+img[alt="headphone"] {
+  height: 500px;
 }
 .discount {
   position: absolute;
   z-index: 1;
-  top: 450px;
-  right: 390px;
+  top: 250px;
+  left: 700px;
 }
 .discount-content {
   line-height: 10px;
   position: absolute;
   z-index: 2;
   text-align: center;
-  top: 465px;
+  top: 295px;
+  right: 475px;
   color: #FFF;
-}
-img[alt="headphone"] {
-  position: absolute;
-  top: 150px;
 }
 .dots {
   display: inline-flex;
-  position: absolute;
-  z-index: 3;
-  top: 750px;
-  right: 180px;
+  padding: 10px 50px;
 }
 .dots > div {
   width: 30px;
   height: 30px;
   border-radius: 15px;
-  margin: 10px;
+  margin: 0px 12px;
 }
 .yellow-dot {
   background: yellow;
@@ -133,15 +151,163 @@ img[alt="headphone"] {
 .black-dot {
   background: black;
 }
-.right-section > button {
-  position: absolute;
-  z-index: 2;
-  top: 850px;
-  right: 160px;
+.action-btn-2 {
+  background-color: #F45B33;
+  border: none;
+  border-radius: 90px;
+  padding: 15px 40px;
+  font-size: 18px;
+  color: #FFF;
+  font-weight: normal;
+  margin-top: 45px;
+  width: 230px;
+  height: 60px;
 }
 button:hover {
   background-color: #FFF;
   color: #F45B33;
   font-weight: bold;
   border: 2px solid #F45B33;
+}
+/* for tablet screen size */
+@media only screen and (max-width: 800px) {
+  body {
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    padding: 20px 30px;
+    min-width: 596px;
+  }
+  /* hidden elements */
+  nav .nav-item {
+    visibility: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+  .dots {
+    visibility: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+  /* intro section */
+  .intro-section {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .left-section, .right-section {
+    clear: both;
+    object-fit: contain;
+  }
+  .discount {
+    position: absolute;
+    left: 140px;
+  }
+  .discount-content {
+    position: absolute;
+  }
+  #addToCart {
+    width: 110%;
+    border-radius: 15px;
+    margin-top: 0%;
+  }
+  .left-section {
+    text-align: left;
+    width: 100%;
+    padding-top: 0%;
+  }
+  .left-section > h1 {
+    font-weight: bolder;
+  }
+  img[alt="plus"] {
+    height: 20px;
+  }
+  .action-btns {
+    margin-top: 0;
+    justify-content: center;
+    width: 100%;
+  }
+  .action-btn-1 {
+    border-radius: 5px;
+    width: 40%;
+  }
+}
+/* for tablet screen size */
+@media only screen and (max-width: 576px) {
+  * {
+    padding: 0%;
+    margin: 0%;
+  }
+  body {
+    max-width: 90%;
+    justify-content: center;
+    align-items: center;
+  }
+  nav {
+    width: 70%;
+  }
+  .nav-items {
+    visibility: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+  .intro-section {
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  }
+  .discount {
+    position: absolute;
+    left: 20px;
+    top: 200px;
+  }
+  .discount-content {
+    position: absolute;
+    left: 50px;
+    top: 230px;
+  }
+  .discount-content > h4 {
+    position: absolute;
+    left: 20px;
+    top: 90px;
+  }
+  #addToCart {
+    width: 130%;
+    border-radius: 5px;
+    height: 50px;
+    margin-left: -30px;
+  }
+  .right-section {
+    align-items: center;
+  }
+  .left-section, .right-section {
+    width: 90%;
+    text-align: center;
+    position: relative;
+    right: 40px;
+  }
+  .left-section > h3 {
+    visibility: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+  .left-section > h1 {
+    font-size: 40px;
+  }
+  .sub-headlines {
+    margin-left: -50px;
+  }
+  .action-btns {
+    padding: 0px;
+    position: relative;
+    top: 50px;
+    width: 95%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .action-btn-1 {
+    width: 130%;
+    height: 50px;
+  }
 }
