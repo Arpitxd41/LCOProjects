@@ -1,0 +1,118 @@
+      /*----SCREEN RESPONSIVE specifications---*/
+      @media screen and (max-width: 800px){
+        body{
+          justify-content: center;
+        }
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        /* Hidden Items for small screens */
+         
+        #navMid {
+            visibility: hidden;
+        }
+        .more-svg {
+            visibility: hidden;
+            position: absolute;
+            z-index: -1;
+        }
+        #imgMain {
+            clear: right;
+            visibility: hidden;
+            position: absolute;
+            height: 2px;
+        }
+        #imgReplacement {
+            visibility: visible !important;
+            height: 600px !important;
+            position: relative;
+            top: 0px;
+            margin-top: 0px;
+            padding-top: 0px;
+        }
+        /* Other adjustments */
+        
+        #midWhole {
+            display: flex;
+            flex-direction: column;
+        }
+        #midWholePart1 {
+            width: 90%;
+            float: none;
+            justify-content: center;
+        }
+        #monstera {
+            font-size: 70px !important;
+        }
+        #midWholePart11 {
+        }
+        #midWholePart11 li {
+            width: 160%;
+            justify-content: center;
+            text-align: center;
+            list-style: none;
+        }
+        #midWholePart12 {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 150%;
+            justify-items: center;
+        }
+        #midWholePart121 {
+            width: 70% !important;
+            border-radius: 5px !important;
+            font-weight: 500 !important;
+            text-align: left !important;
+        }
+        #midWholePart121 h1 {
+            font-size: large !important;
+        }
+        #midWholePart13 {
+            width: 160%;
+            display: flex;
+            flex-direction: column;
+        }
+        #feeding, #light {
+            padding: 0px 30px !important;
+        }
+        #light {
+            padding: 0px 40px !important;
+        }
+        #care {
+            padding: 0px 30px !important;
+        }
+    }
+@media screen and (max-width: 596px){
+    * {
+        padding: 0%;
+        margin: 0%;
+        text-decoration: none;
+        list-style: none;
+    }
+    body {
+        background-color: #fffadb;
+        justify-items: center;
+        text-align: center;
+    }
+    #navMid {
+        visibility: hidden;
+        position: absolute;
+        z-index: -1;
+    }
+    #midWholePart11 h1 {
+        font-size: 70px;
+        font-weight: 600;
+    }
+    #midWholePart121 {
+        width: 90% !important;
+    }
+    #midWholePart13 {
+        display: flex;
+        flex-direction: column;
+    }
+    #midWholePart2 img {
+        height: 500px !important;
+    }
+}
