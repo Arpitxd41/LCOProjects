@@ -4,15 +4,16 @@
 
 * {
   font-family: "Poppins", sans-serif;
-}
-body {
-  background-color: #f4f5f4;
-  overflow-x: hidden;
+  padding: 0%;
+  margin: 0%;
+  list-style: none;
+  text-decoration: none;
 }
 /*----header section--*/
 header {
   background-color: #566afa;
   height: 500px;
+  padding: 20px 0px 30px 40px;
 }
 .header-text > h2 {
   font-size: 40px;
