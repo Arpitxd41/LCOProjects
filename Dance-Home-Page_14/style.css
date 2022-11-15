@@ -1,44 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&family=Fredoka:wght@300&family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@700&display=swap');
+
+
+* {
+    text-decoration: none;
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+}
 body {
-    padding:20px;
-    background-color: #e7e7e7;
+    padding: 20px 30px;
+    background-color: #E7E7E7;
 }
+/* ----navigation field----- */
 .nav-section {
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    height: fit-content;
+    align-items: center;
+    text-align: right;
 }
-.logo {
-    float: inline-start;
-    position: relative;
-    z-index: +1;
+.nav-section > hr {
+    width: 30%;
+    height: 1.5px;
+    background-color: #63636394;
+    border: none;
+    margin-left: 18rem;
 }
-hr {
-    float: center;
-    border: 1px solid #161616;
-    z-index: inherit;
-    width: 400px;
-    height: 0px;
-    position: relative;
-    left: 340px;
-}
+/* --------navbar-------- */
 .navbar {
-    float: inline-end;
-    position: relative;
-    left: 340px;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+    flex-direction: row;
     font-size: 15px;
     font-weight: 500;
+    display: flex;
+    width: 35%;
 }
 .navbar > a {
-    text-decoration: none;
-    color: #424242;
-    padding-left: 30px;
-    font-family: 'Montserrat', sans-serif;
+    color: #686868b2;
+    padding: 5px;
+    width: auto;
+    width: 5rem;
 }
 .navbar > a:hover {
-    color: #161616;
+    color: #414141;
     font-weight: bold;
-} 
+}
+/*  --------main--------  */
 .headline {
     display: inline-flex;
     flex-direction: row;
@@ -46,119 +56,90 @@ hr {
     bottom: 20px;
 }
 .main {
-    position: relative;
-    bottom: 70px;
-    right: 50px
+    position: absolute;
+    top: -5rem;
+    left: -3rem;
+    z-index: -1;
 }
 h1 {
-    color: #161616;
+    color: #313131;
     position: relative;
-    bottom: 70px;
+    top: 3rem;
+    left: 25rem;
     font-size: 130px;
     line-height: 100px;
 }
 .hh1 {
-    color: #161616;
+    color: #313131;
+    font-weight: bolder;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 1.5px;
-    -webkit-text-stroke-color: #161616;
+    -webkit-text-stroke-color: #313131;
 }
 h3 {
     position: relative;
-    top: 117px;
-    left: 20px;
-    font-size: 30px;
-    color: #565656;
+    color: #727272;
+    top: 9rem;
+    left: 26rem;
+    font-size: 35px;
     font-weight: normal;
 }
 .social-media {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
-    padding-top: 20px;
-    position: relative;
-    left: 160px; 
+    position: absolute;
+    top: 3rem;
+    right: -34rem;
 }
 .social-media > a {
-    padding-top: 20px;
+    margin-bottom: 1.3rem;
 }
 .check {
-    background-color: #161616;
-    color: #fff;
-    padding: 15px 20px;
-    width: 250px;
-    font-size: 15px;
-    font-weight: bold;
-    border: none;
     position: relative;
-    bottom: 470px;
-    right: 20px;
-    float: right;
-}
-.check:hover {
-    color: #161616;
-    background-color: #fff;
-    border: 1px solid #412a2a;
+    top: 11rem;
+    left: 18rem;
+    background-color: #313131;
+    padding: 20px 80px;
+    border: none;
+    color: #E7E7E7;
+    font-weight: bold;
 }
 .options {
-    display: flex;
-    flex-direction: row;
-    float: left;
-    position: relative;
-    left: 480px;
-    bottom: 400px;
+    position: absolute;
+    font-size: 17px;
+    bottom: -3rem;
+    left: 31rem;
     font-family: 'Montserrat', sans-serif;
-    color: #424242;
-}
-li:hover {
-    color: #161616;
-    font-weight: bold;
-    list-style: circle;
-}
-.options li:before {
-    background-color: #565656;
-    width: 2px;
-    content: '';
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    right: 199px;
-}
-.options li::after {
-    content: '';
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: contain;
-    left: 0;
-    top: 0px;
-    width: 12px;
-    height: 12px;
 }
 .options li {
-    /* You need to turn on relative positioning so the line is placed relative to the item rather than absolutely on the page */
-    position: relative;
-    /* Use padding to space things out rather than margins as the line would get broken up otherwise */
-    margin: 0;
-    padding-bottom: 1em;
-    padding-left: 30px;
+    margin: 30px 0;
+    list-style: disc;
+    font-weight: 400;
+    color: #686868b2;
 }
-.ditto {
-    font-size: 150px;
-    position: absolute;
-    top: -40px;
-    font-family: 'BIZ UDPMincho', serif;
+.options li:hover {
+    color: #313131;
+    font-weight: bold;
 }
 .comma {
-    position: relative;
-    float: right;
-    bottom: 380px;
-    left: 130px;
-    color: #161616;
+    position: absolute;
+    right: 6em;
+    bottom: -11em;
+    color: #414141;
     font-family: 'Montserrat', sans-serif;
+}
+.comma > p {
     font-size: 17px;
+    margin: 25px 0;
+}
+.ditto {
+    rotate: 180deg;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
 }
 .down-arrow {
-    position: relative;
-    left: 220px;
-    bottom: 300px;
     rotate: 180deg;
+    position: absolute;
+    right: 0em;
+    bottom: 0em;
 }

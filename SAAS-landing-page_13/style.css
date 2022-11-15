@@ -1,40 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@700&display=swap');
-body{
-    background-color: #fff;
+
+* {
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
     font-family: 'Montserrat', sans-serif;
-    font-size: 17px;
+    font-size: 16px;
 }
 header {
-    background-color: #6924e9;
+    background-color: #7645B6;
     color: #fff;
     margin: 0;
-    padding: 30px 20px 40px 90px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    padding: 70px;
     height: 600px;
 }
 .nav-section {
     display: flex;
     flex-direction: row;
-    font-family: 'Montserrat', sans-serif;
+    justify-content: space-between;
+    padding: 10px;
+}
+.logo {
+    object-fit: contain;
 }
 .nav-bar {
     display: flex;
-    flex-direction: row;
-    padding-left: 400px;
     font-size: 16px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 .nav-bar > a {
-    text-decoration: none;
-    color: #fff;
-    padding: 10px 40px 10px 0px;
+    color: #FFF;
+    margin-right: 25px;
 }
 .free-trial {
     background-color: #0099ff;
     border: none;
     color: #fff;
     font-size: 16px;
-    padding: 5px 25px;
+    padding: 15px 30px;
+    margin-left: 10px;
 }  
 .intro {
     float: left;
@@ -42,13 +48,18 @@ header {
     padding-top: 90px;
     width: 40%;
 }
+.intro > h1 {
+    font-size: 50px;
+    margin: 40px 0;
+}
 .first {
     float: right;
     width: 50%;
+    padding: 40px;
 }
 /*second section----*/
 .section-2 {
-    margin: 40px 50px;
+    margin: 60px;
 }
 .saas-image {
     float: left;
@@ -62,46 +73,126 @@ header {
 }
 ul {
     list-style: url(./assets/forward\ arrow.png);
+    list-style-position: inside;
   }
+.sec-21 li {
+    margin: 30px 0;
+}  
 
 .sec-22 {
     float: left;
     text-align: center;
+    margin: 50px 0;
 }
 .cards {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     text-align: center;
     margin: 90px 0;
 }
 .card {
-    border-right: 4px solid #b4afaf ;
-    border-bottom: 4px solid #b4afaf;
-    width: 20%;
+    border-right: 3px solid #b4afaf ;
+    border-bottom: 3px solid #b4afaf;
     line-height: 20px;
-    padding: 20px 0 0 0;
-    border-radius: 30px;
+    padding-top: 25px;
+    border-radius: 32px;
     margin: 30px;
     background-color: #fff;
 }
-.card:hover .card-base {
-    background-color: #6924e9;
-    color: #fff;
-    margin: 0;
-    padding: 5px 2px;
-    border-radius: 25px;
-}
-.nav-bar>a:hover {
-    font-weight: bold;
-    color: #fff;
+.card-base {
+    padding: 22px 0;
+    border-radius: 30px;
 }
 h3 {
-    font-size: 30px;
+    font-size: 40px;
 }
 h4 {
-    font-size: 20px;
+    font-size: 25px;
+    margin: 20px 0;
 }
-.card-base > p {
+.card:hover .card-base {
+    background-color: #7645B6;
+    color: #FFF;
+}
 
-    font-size: 15px;
+/* adjustments for screeen responsiveness */
+/* screen size 800px */
+@media screen and (max-width: 800px) {
+    .nav-bar > a {
+        display: none;
+    }
+    .intro > h1 {
+        font-size: 40px;
+    }
+    .first {
+        margin-top: 70px;
+        padding: 0%;
+    }
+    header {
+        padding: 50px;
+    }
+    .section-2 {
+        padding: 20px;
+        margin: 0%;
+    }
+    .saas-image, .sec-21 {
+        clear: both;
+        background-color: #eeeeee;
+        border-radius: 20px;
+        justify-content: space-around;
+        margin: 1%;
+        padding: 0%;
+        display: flex;
+        flex-direction: column;
+        width: 98%;
+    }
+    .sec-21 ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    .sec-21 h3 {
+        margin: 20px;
+    }
+    .sec-21 li {
+        background-color: #FFF;
+        margin: 5px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .free-trial {
+        display: none;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        padding: 0%;
+        height: fit-content;
+    }
+    .intro, .first {
+        width: 96%;
+        padding: 20px;
+        margin: 0%;
+    }
+    .sec-21 ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .card-base {
+        padding: 10px 5px;
+    }
+    .card:hover .card-base {
+        background-color: #7645B6;
+        border-radius: 30px;
+    }
+    .card h4 {
+        font-size: 20px;
+    }
 }

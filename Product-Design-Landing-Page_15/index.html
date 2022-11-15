@@ -8,35 +8,53 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="section-1">  <!-----nav field STARTS------->
+    <!-- SECTION 1 -->
+    <div class="section-1">
+
+      <!-- Navigation -->
       <div class="navigation-field">
-        <img src="./assets/logo-red.svg" alt="Company-logo"><!--stop-->
-        <div class="nav-bar">           
-          <div class="nav-item" id="drop1"><a href="#">HOME <i class="arrow-down"> </i></a> 
-            <div class="dropdown-menu">
-              <a href="">Profile</a>
-              <a href="#">Resume</a>
-              <a href="#">Connect</a>
-              <a href="#">Mail</a>
-              <a href="#">Social-Media</a>
+        <!-- logo -->
+        <img src="./assets/logo-red.svg" alt="Company-logo">        
+        
+        <!-- menu-icon -->
+        <div class="burger">
+          <img src="./assets/menu-icon.png" class="menu-icon" height="50px" alt="menu-icon">
+        </div>
+
+        <!--nav-bar-->
+        <div class="nav-bar">
+          <!-- dropdown1 -->
+            <div class="nav-item" id="drop1"><a href="#">HOME <i class="arrow-down"> </i></a> 
+              <div class="dropdown-menu">
+                <a href="">Profile</a>
+                <a href="#">Resume</a>
+                <a href="#">Connect</a>
+                <a href="#">Mail</a>
+                <a href="#">Social-Media</a>
+              </div>
             </div>
-          </div>  
-          <div class="nav-item"><a href="#">PROJECT</a></div> 
-          <div class="nav-item"><a href="#">ABOUT</a></div> 
-          <div class="nav-item"><a href="#">CONTACT</a></div> 
-          <div class="nav-item" id="drop2"><a href="#">OTHER PAGES <i class="arrow-down"> </i></a> 
-            <div class="dropdown-menu2">
-              <a href="">Work & Projects</a>
-              <a href="#">Contracts</a>
-              <a href="#">Vision</a>
-              <a href="#">Affiliations</a>
-              <a href="#">Hobbies</a>
+            
+            <div class="nav-item"><a href="#">PROJECT</a></div> 
+            <div class="nav-item"><a href="#">ABOUT</a></div> 
+            <div class="nav-item"><a href="#">CONTACT</a></div> 
+
+            <!-- dropdown2 -->
+            <div class="nav-item" id="drop2"><a href="#">OTHER PAGES <i class="arrow-down"></i></a> 
+              <div class="dropdown-menu2">
+                <a href="">Work & Projects</a>
+                <a href="#">Contracts</a>
+                <a href="#">Vision</a>
+                <a href="#">Affiliations</a>
+                <a href="#">Hobbies</a>
+              </div>
             </div>
-          </div>      
+                
         </div>
       </div>
-      <div class="main-head"> <!-----main STARTS------->
-        <img src="./assets/Arthur.png" alt="profile-image" class="dp">
+
+      <!-- Main -->
+      <div class="main-head">
+        <img src="./assets/Arthur.png" alt="profile-image" height="550px" class="dp">
         <div class="intro">
           <h4>Hello I'm Arthur</h4>
           <h1>Visual Designer</h1>
@@ -45,30 +63,46 @@
         </div>
       </div>
     </div>
-    <div class="section-2"><!-----cards START------->
+
+    <!-- SECTION-2:cards-->
+    <div class="section-2">
       <div class="left-block"></div>
       <div class="center-blocks-1">
-        <div class="block1">
+
+        <div class="block1 block">
           <div class="image1"></div>
           <h4>UI Design</h4>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, quae!</p>
-          <h5>KNOW MORE &#x2192</h5>
+          <div class="know">
+            <h5>KNOW MORE </h5>
+            <img src="./assets/arrow-right.svg" height="20px" class="right-a1" alt="right-arrow">
+          </div>
         </div>
-        <div class="block2">
+
+        <div class="block2 block">
           <div class="image2"></div>
           <h4>Product Design</h4>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla, laborum?</p>
-          <h5>KNOW MORE &#x2192</h5>
+          <div class="know">
+            <h5>KNOW MORE </h5>
+            <img src="./assets/arrow-right.svg" height="20px" class="right-a1" alt="right arrow">
+          </div>
         </div>
-        <div class="block3">
+
+        <div class="block3 block">
           <div class="image3"></div>
           <h4>Branding</h4>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, ut?</p>
-          <h5>KNOW MORE &#x2192</h5>
+          <div class="know">
+            <h5>KNOW MORE </h5>
+            <img src="./assets/arrow-right.svg" class="right-a1" height="20px" alt="right arrow">
+          </div>
         </div>
+
       </div>
+
       <div class="center-blocks-2"><!-----grid STARTS------->
-        <div class="blocks1">
+        <div class="blocks blocks1">
           <h3>12</h3>
           <p>Years Experience</p>
         </div>
@@ -90,48 +124,79 @@
         </div>
       </div>
     </div>
-    <div class="section-3"><!-----options card START------->
+
+    <!-- SECTION-3:option cards -->
+    <div class="section-3">
       <div class="section-31">
+
         <div class="sec3">
           <h3>FEATURED PROJECTS</h3>
           <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</P>
         </div>
-        <div class="sec3-button">
+
+        <div class="view-all">
           <button class="view">VIEW ALL</button>
         </div>
+
       </div>
-      <div class="cards">
+
+      <div class="section-32 cards">
         <div class="card">
           <img src="./assets/Screenshot 2022-06-25 131915.jpg" height="280px" alt="Vintage">
-          <h4>The Vintage</h4>
-          <h5>KNOW MORE &#x2192</h5>
+          <div class="card-label">
+            <h4>The Vintage</h4>
+            <div class="know">
+              <h5>KNOW MORE </h5>
+              <img src="./assets/arrow-right.svg" height="20px" class="right-a2" alt="right arrow">
+            </div>
+          </div>
         </div>
+
         <div class="card">
           <img src="./assets/Screenshot 2022-06-25 132031.jpg" height="280px" alt="Foodasa">
-          <h4>Foodasa</h4>
-          <h5>KNOW MORE &#x2192</h5>
+          <div class="card-label">
+            <h4>Foodasa</h4>
+            <div class="know">
+              <h5>KNOW MORE </h5>
+              <img src="./assets/arrow-right.svg" height="20px"  class="right-a2" alt="right arrow">
+            </div>
+          </div>
         </div>
-        <div class="card">
-          <img src="./assets/Screenshot 2022-06-25 133016.jpg" height="280px" alt="Marco Accent">
-          <h4>Marco Accent</h4>
-          <h5>KNOW MORE &#x2192</h5>
+
+        <div class="card marco-card">
+          <img src="./assets/Screenshot 2022-06-25 133016.jpg" height="280px" alt="Marco-Accent">
+          <div class="card-label">
+            <h4>Marco Accent</h4>
+            <div class="know">
+              <h5>KNOW MORE </h5>
+              <img src="./assets/arrow-right.svg" height="20px" class="right-a2" alt="right arrow">
+            </div>
+          </div>
         </div>
+
         <div class="card">
           <img src="./assets/Screenshot 2022-06-25 133426.jpg" height="280px" alt="Mozaik">
-          <h4>Mozaik</h4>
-          <h5>KNOW MORE &#x2192</h5>
+          <div class="card-label">
+            <h4>Mozaik</h4>
+            <div class="know">
+              <h5>KNOW MORE </h5>
+              <img src="./assets/arrow-right.svg" height="20px" class="right-a2" alt="right arrow">
+            </div>
+          </div>
         </div>
       </div>
-      <div class="contact-section">
+
+      <div class="section-33 connect">
         <div class="contact-head">
-          <h2>Let's work together on <br> your next project</h2>
+          <h2>Let's work together on your next project</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ipsum animi maxime voluptatum iste earum.</p>
         </div>
         <div class="contact-button">
           <button class="contact">CONTACT</button>
         </div>
       </div>
-      <div class="sec3-bottom">
+
+      <div class="section-34 bottom">
         <a href="#">HOME</a>
         <a href="#">ABOUT</a>
         <a href="#">PROJECTS</a>
@@ -143,9 +208,9 @@
     <div class="section-4">
         <img class="logo-bottom" src="./assets/logo-red.svg" alt="company-logo">
         <div class="social-media">
-            <a href="https://www.facebook.com"><img src="./assets/15fb.png" alt="facebook"></a>
-            <a href="https://twitter.com"><img src="./assets/15tw.png" alt="twitter"></a>
-            <a href="www.youtube.com"><img src="./assets/15yt.png" alt="youtube"></a>
+            <a href="#"><img src="./assets/15tw.png" alt="twitter"></a>
+            <a href="#"><img src="./assets/15fb.png" alt="facebook"></a>
+            <a href="#"><img src="./assets/15yt.png" alt="youtube"></a>
         </div>
     </div>
 
