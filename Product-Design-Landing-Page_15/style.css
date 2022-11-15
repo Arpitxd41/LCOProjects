@@ -363,7 +363,6 @@ body {
         }
         /* .section-1 */
         .section-1 {
-            border: 2px solid red;
             padding-top: 20px;
         }
         .dp, .intro {
@@ -372,7 +371,6 @@ body {
             object-fit: cover;
         }
         .section-2 {
-            border: 2px dotted red; 
             padding: 0 30px;  
         }
         .left-block {
